@@ -60,12 +60,16 @@ img {
     color: white;
 }
 
+
 /* REGOLE HEADER */
+
 
 
 .main_header {
     width: 100%;
     background-color: white;
+    position: fixed;
+    z-index: 1;
 }
 
 .main_nav, .main_nav_left, .main_nav_list_left,
