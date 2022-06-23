@@ -2,4 +2,60 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
 }
+
+ol, ul, menu {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+
+/* REGOLE BUTTON */
+
+.button {
+    padding: 5px 10px;
+    border: 0;
+}
+
+.button_blue {
+    background-color: #0061FF;
+    color: white;
+}
+
+/* REGOLE HEADER */
+.main_header {
+    position: fixed;
+    width: 100%;
+}
+
+.main_nav, .main_nav_left, .main_nav_list_left,
+.main_nav_list_right, .main_nav_right  {
+    display: flex;
+}
+
+.main_nav_list_left, .main_nav_list_right   {
+    align-items: center;
+}
+
+.main_nav {
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.nav_logo {
+    width: 136px;
+    height: 30px;
+}
+
+.main_header a {
+    padding: 0 10px;
+}
+
+
+
+
