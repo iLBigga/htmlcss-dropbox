@@ -14,11 +14,26 @@ a {
     color: currentColor;
 }
 
+img {
+    max-width: 100%;
+}
+
+/* REGOLE CONTAINER */
+
+.container_large {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 
 /* REGOLE BUTTON */
 
+.button a {
+
+}
+
 .button {
-    padding: 5px 10px;
+    padding: 10px 15px;
     border: 0;
 }
 
@@ -28,9 +43,11 @@ a {
 }
 
 /* REGOLE HEADER */
+
+
 .main_header {
-    position: fixed;
     width: 100%;
+    background-color: white;
 }
 
 .main_nav, .main_nav_left, .main_nav_list_left,
@@ -49,13 +66,60 @@ a {
 
 .nav_logo {
     width: 136px;
-    height: 30px;
+    height: 28px;
 }
 
 .main_header a {
     padding: 0 10px;
 }
 
+/* MAIN JUMBO SECTION */
+
+.jumbo_main, .jumbo_main_article {
+    display: flex;
+}
+
+
+.jumbo_section {
+    background-color: #B4D0E7;
+}
+
+.jumbo_title  h1 {
+    font-size: 90px;
+}
+
+.jumbo_main .jumbo_main_article {
+    flex-basis: 35%;
+    flex-direction: column;
+}
+
+.fa-solid {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.jumbo_main_article li{
+    padding-top: 40px;
+}
+
+.jumbo_main_img{
+    flex-basis: 65%;
+    position: relative;
+}
+
+.jumbo_main_img img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding-top: 40px;
+}
 
 
 
+/* DEBUG */
+
+.debug .container_large {
+    /* height: 700px; */
+    padding-top: 80px;
+}
