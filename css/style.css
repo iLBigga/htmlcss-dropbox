@@ -101,7 +101,6 @@ img {
 .jumbo_section {
     background-color: #B4D0E7;
     padding-top: 80px;
-    height: 733px;
 }
 
 .jumbo_title  h1 {
@@ -216,6 +215,11 @@ img {
 .main_card_bottom li::before {
     content: '\2713';
     color: #0061FF;
+}
+
+.card_section hr {
+    width: 40px;
+    margin-left: 15px;
 }
 
 /* HORIZONTAL CARD */
