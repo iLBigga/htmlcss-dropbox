@@ -24,7 +24,9 @@ img {
 }
 
 
+
 /* REGOLE LAYOUT */
+
 
 
 .container_large {
@@ -66,7 +68,19 @@ section {
 
 
 
+/* GENERAL TEXT STYLE */
+
+
+
+.main_section_title {
+    font-size: 30px;
+}
+
+
+
 /* REGOLE BUTTON */
+
+
 
 
 .button {
@@ -74,13 +88,6 @@ section {
     padding: 0 16px;
     text-align: center;
 }
-
-.button-normal {
-    font-size: 18px;
-    padding: 0 16px;
-    text-align: center;
-}
-
 
 a.button {
     display: inline-block;
@@ -233,7 +240,10 @@ a.button {
 }
 
 
+
 /*  PLAN TEXT STYLE */
+
+
 
 .main_plan_title {
     font-size: 42;
@@ -251,7 +261,10 @@ a.button {
     font-size: 14px;
 }
 
+
+
 /* CARD SECTION */
+
 
 
 .plan_section {
@@ -315,6 +328,7 @@ a.button {
 /* FIND PARTNER SECTION TEXT STYLE */
 
 
+
 .find_partner_title {
     padding-top: 60px;
     padding-bottom: 16px;
@@ -325,7 +339,9 @@ a.button {
 }
 
 
+
 /* FIND PARTNER SECTION */
+
 
 
 .find_partner {
@@ -334,17 +350,26 @@ a.button {
     gap: 50px;
 }
 
+
+
 /*  DROPBOX BUSISESS FEATURE TEXT STYLE*/
+
+
 
 .business_title {
     margin-bottom: 60px;
 }
 
 .feature_img_title {
+
     margin-bottom: 38px;
 }
 
+
+
 /* DROPBOX BUSINESS FEATURE SECTION */
+
+
 
 .business_card {
     padding: 30px;
@@ -353,6 +378,8 @@ a.button {
 .row.business_feature {
     margin: 0 -30px
 }
+
+
 
 /* DEBUG */
 
