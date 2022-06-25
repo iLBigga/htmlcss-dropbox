@@ -7,40 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/05b5c7b331.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <title>DropBox</title>
 </head>
 
 <body class="debug">
+
+    <!-- NAV BAR -->
+
     <header class="main_header">
-        <div class="main_nav">
-            <div class="main_nav_left">
+        <nav class="main_nav">
+            <nav class="main_nav_left">
                 <ul class="main_nav_list_left">
                     <li><a href="#"><img class="nav_logo" src="./img/logo-small.png" alt="Dropbox Logo"></a></li>
                     <li><a href="#">Perchè Dropbox</a></li>
                     <li><a href="#">Funzioni</a></li>
                     <li><a href="#">Piani e Prezzi</a></li>
                 </ul>
-            </div>
-            <div class="main_nav_right">
+            </nav>
+            <nav class="main_nav_right">
                 <ul class="main_nav_list_right">
                     <li><a href="#">Supporto</a></li>
                     <li><a href="#">Contatta l'ufficio vendite</a></li>
-                    <li><a href="#">Acendi</a></li>
-                    <li><button class="button button_blue"><a href="#">Inizia</a></button></li>
+                    <li><a href="#">Accedi</a></li>
+                    <li><a class="button--start" href="">Inizia</a></li>
                 </ul>
-            </div>
-        </div>
+            </nav>
+        </nav>
     </header>
     <main>
+
         <!-- JUMBO SECTION -->
+
+
         <section class="jumbo_section">
             <div class="container_large">
                 <!-- Jumbo Title -->
@@ -60,7 +62,8 @@
                                     integrato per ottimizzare il flusso di lavoro esistente.
                                 </p>
                             </li>
-                            <li><button class="button button_blue"><a href="#">inizia la tua prova gratuita</a></button>
+                            <li>
+                                <button class="button button_blue"><a href="#">inizia la tua prova gratuita</a></button>
                             </li>
                             <li>
                                 <p>Annulla in qualsiasi momento</p>
@@ -69,7 +72,7 @@
                         <i class="fa-solid fa-arrow-down"></i>
                     </div>
                     <div class="jumbo_main_img">
-                        <img src="./img/jumbo.png" alt="">
+                        <img src="./img/jumbo.png" alt="Screenshot app">
                     </div>
                 </div>
             </div>
@@ -77,172 +80,256 @@
 
         <!-- CARD SECTION -->
 
+
+        <section class="plan_section">
+            <div class="container main_plan_title">
+                <h1>Trova il piano business che fa per te</h1>
+            </div>
+
+
         <!-- CARD SECTION TITLE -->
-        <section class="card_section">
+
+    
             <div class="container">
-                <div class="card_section_title">
-                    <div class="card_main_title">
-                        <h2>Trova il piano business che fa per te</h2>
-                    </div>
-                    <div class="card_section_checkbox">
-                        <span><input type="radio"> Fatturazione mensile</span>
-                        <span><input type="radio"> Fatturazione annuale</span>
-                    </div>
+                <div class="row plan_checkbox">
+                    <input type="radio">Fatturazione mensile
+                    <input type="radio">Fatturazione annuale
                 </div>
-
-                <!-- VERTICAL CARD  -->
-
-                <div class="row">
-                    <div class="col-4">
-                        <div class="card">
-                            <div class="card_type"><i class="fa-solid fa-user main_icon"></i> Singolo</div>
-                            <div class="main_card_top">
-                                <div class="main_card_title">
-                                    <h3>Professional</h3>
-                                    <span>$ 12.00</span>
-                                    <span>/mese</span>
-                                </div>
-                                <div class="card_list">
-                                    <ul>
-                                        <li>
-                                            <i class="fa-solid fa-user main_icon"></i>
-                                            1 utente
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-user main_icon"></i>
-                                            5 TB di spazio di archiviazione sicuro
-                                        </li>
-                                        <li><i class="fa-solid fa-user main_icon"></i>
-                                            Funzioni di produttività premium e condivisione file semplice e sicura
-                                        </li>
-                                    </ul>
-                                </div>
-                                <button class="button button_blue"><a href="#">Prova gratis per 30 giorni</a></button>
-                                <p>Oppure <a href="#">acquista ora</a></p>
+    
+                <div class="row plan">
+                    <div class="col-plan">
+                        <header class="card_header"><i class="fa-solid fa-user"></i>Singolo</header>
+                        <div class="main_card">
+                            <div class="plan_title">
+                                <h3 class="card_title">Professional</h3>
+                                <p class="card_price"><strong>$ 12.00</strong></p>
+                                <p class="card_time">/mese</p>
                             </div>
+                            <ul class="card_feature">
+                                <li class="feature_item"><i class="fa-solid fa-user"></i>1 Utente</li>
+                                <li class="feature_item"><i class="fa-solid fa-folder"></i>5 TB di spazio di archiviazione sicuro</li>
+                                <li class="feature_item"><i class="fa-solid fa-share-nodes"></i>Funzioni di produttività premium e condivisione file semplice e sicura</li>
+                            </ul>
+                            <a class="button-normal button--blue" href="">Prova gratis per 30 giorni</a>
+                            <p>oppure <a class="card-link" href="#">acquista ora</a></p>
                             <hr>
-                            <div class="main_card_bottom">
-                                <h3>Punti Salienti del piano</h3>
-                                <ul>
-                                    <li> Invia file fino a 100gb con Dropbox Transfer</li>
-                                    <li> Cartelle offline su dispositivi mobili</li>
+                            <div class="card_bottom">
+                                <h4>Punti Salienti del piano</h4>
+                                <ul class="card_feature ">
+                                    <li class="feature_item""><i class=" fa-solid fa-check"></i>Invia file fino a 100 GB con Dropbox Transfer</li>
+                                    <li class="feature_item"><i class="fa-solid fa-check"></i>Cartelle offline su dispositivi mobili</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-4">
-                        <div class="card">
-                            <div class="card_type"><i class="fa-solid fa-user main_icon"></i> Singolo</div>
-                            <div class="main_card_top">
-                                <div class="main_card_title">
-                                    <h3>Professional</h3>
-                                    <span>$ 12.00</span>
-                                    <span>/mese</span>
-                                </div>
-                                <div class="card_list">
-                                    <ul>
-                                        <li>
-                                            <i class="fa-solid fa-user main_icon"></i>
-                                            1 utente
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-user main_icon"></i>
-                                            5 TB di spazio di archiviazione sicuro
-                                        </li>
-                                        <li><i class="fa-solid fa-user main_icon"></i>
-                                            Funzioni di produttività premium e condivisione file semplice e sicura
-                                        </li>
-                                    </ul>
-                                </div>
-                                <button class="button button_blue"><a href="#">Prova gratis per 30 giorni</a></button>
-                                <p>Oppure <a href="#">acquista ora</a></p>
+    
+                    <div class="col-plan">
+                        <header class="card_header"><i class="fa-solid fa-user"></i>Singolo</header>
+                        <div class="main_card">
+                            <div class="plan_title">
+                                <h3 class="card_title">Professional</h3>
+                                <p class="card_price"><strong>$ 12.00</strong></p>
+                                <p class="card_time">/mese</p>
                             </div>
+                            <ul class="card_feature">
+                                <li class="feature_item"><i class="fa-solid fa-user"></i>1 Utente</li>
+                                <li class="feature_item"><i class="fa-solid fa-folder"></i>5 TB di spazio di archiviazione sicuro</li>
+                                <li class="feature_item"><i class="fa-solid fa-share-nodes"></i>Funzioni di produttività premium e condivisione file semplice e sicura</li>
+                            </ul>
+                            <a class="button button--blue" href="">Prova gratis per 30 giorni</a>
+                            <p>oppure <a class="card-link" href="#">acquista ora</a></p>
                             <hr>
-                            <div class="main_card_bottom">
-                                <h3>Punti Salienti del piano</h3>
-                                <ul>
-                                    <li> Invia file fino a 100gb con Dropbox Transfer</li>
-                                    <li> Cartelle offline su dispositivi mobili</li>
-                                    <li> Invia file fino a 100gb con Dropbox Transfer</li>
-                                    <li> Cartelle offline su dispositivi mobili</li>
-                                    <li> Invia file fino a 100gb con Dropbox Transfer</li>
+                            <div class="card_bottom">
+                                <h4>Punti Salienti del piano</h4>
+                                <ul class="card_feature ">
+                                    <li class="feature_item""><i class=" fa-solid fa-check"></i>Invia file fino a 100 GB con Dropbox Transfer</li>
+                                    <li class="feature_item"><i class="fa-solid fa-check"></i>Cartelle offline su dispositivi mobili</li>
+                                    <li class="feature_item""><i class=" fa-solid fa-check"></i>Invia file fino a 100 GB con Dropbox Transfer</li>
+                                    <li class="feature_item"><i class="fa-solid fa-check"></i>Cartelle offline su dispositivi mobili</li>
+                                    <li class="feature_item"><i class="fa-solid fa-check"></i>Cartelle offline su dispositivi mobili</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-4">
-                        <div class="card">
-                            <div class="card_type"><i class="fa-solid fa-user main_icon"></i> Singolo</div>
-                            <div class="main_card_top">
-                                <div class="main_card_title">
-                                    <h3>Professional</h3>
-                                    <span>$ 12.00</span>
-                                    <span>/mese</span>
-                                </div>
-                                <div class="card_list">
-                                    <ul>
-                                        <li>
-                                            <i class="fa-solid fa-user main_icon"></i>
-                                            1 utente
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-user main_icon"></i>
-                                            5 TB di spazio di archiviazione sicuro
-                                        </li>
-                                        <li><i class="fa-solid fa-user main_icon"></i>
-                                            Funzioni di produttività premium e condivisione file semplice e sicura
-                                        </li>
-                                    </ul>
-                                </div>
-                                <button class="button button_blue"><a href="#">Prova gratis per 30 giorni</a></button>
-                                <p>Oppure <a href="#">acquista ora</a></p>
+    
+                    <div class="col-plan">
+                        <header class="card_header"><i class="fa-solid fa-user"></i>Singolo</header>
+                        <div class="main_card">
+                            <div class="plan_title">
+                                <h3 class="card_title">Professional</h3>
+                                <p class="card_price"><strong>$ 12.00</strong></p>
+                                <p class="card_time">/mese</p>
                             </div>
-                            <div>
-                                <hr>
-                                <div class="main_card_bottom">
-                                    <h3>Punti Salienti del piano</h3>
-                                    <ul>
-                                        <li> Invia file fino a 100gb con Dropbox Transfer</li>
-                                        <li> Cartelle offline su dispositivi mobili</li>
-                                        <li> Cartelle offline su dispositivi mobili</li>
-                                    </ul>
-                                </div>
+                            <ul class="card_feature">
+                                <li class="feature_item"><i class="fa-solid fa-user"></i>1 Utente</li>
+                                <li class="feature_item"><i class="fa-solid fa-folder"></i>5 TB di spazio di archiviazione sicuro</li>
+                                <li class="feature_item"><i class="fa-solid fa-share-nodes"></i>Funzioni di produttività premium e condivisione file semplice e sicura</li>
+                            </ul>
+                            <a class="button button--blue" href="">Prova gratis per 30 giorni</a>
+                            <p>oppure <a class="card-link" href="#">acquista ora</a></p>
+                            <hr>
+                            <div class="card_bottom">
+                                <h4>Punti Salienti del piano</h4>
+                                <ul class="card_feature ">
+                                    <li class="feature_item""><i class=" fa-solid fa-check"></i>Invia file fino a 100 GB con Dropbox Transfer</li>
+                                    <li class="feature_item"><i class="fa-solid fa-check"></i>Cartelle offline su dispositivi mobili</li>
+                                    <li class="feature_item"><i class="fa-solid fa-check"></i>Cartelle offline su dispositivi mobili</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- HORIZONTAL CARD -->
-
-                <div class="">
-                    <div class="col_horizontal_row">
-                        <div class="horizontal_card">
-                            <div class="card_type">
-                                <i class="fa-solid fa-user main_icon"></i>
-                                Singolo
+    
+                    <div class="col-12-plan">
+                        <header class="card_header"><i class="fa-solid fa-user"></i>Singolo</header>
+                        <div class="col-12-main-card">
+                            <div class="card-12">
+                                <div class="col-12 card-right"></div>
+                                <h3 class="card-12 title">Emterprise</h3>
+                                <p class="card-12 info"><strong>Contatta l'ufficio vendite per i prezzi</strong></p>
+                                <p class="card-12 text">soluzioni personalizzate e supporto per aiutare i professionisti IT nella gestione su qualsiasi scala</p>
                             </div>
-                            <div class="main_horizontal_card">
-                                <div class="horizontal_card_left">
-                                    <div class="horizontal_card_title">
-                                        <h3>Enterprise</h3>
-                                        <br>
-                                        <h5>Contatta l'ufficio vendite per i prezzi</h5>
-                                    </div>
-                                    <p>Soluzioni personalizzate e supporto su misuro per aiutare i professionisti nella
-                                        gestione su qualsiasi scala.
-                                    </p>
-                                </div>
-                                <div class="horizontal_card_right">
-                                    <button class="button button_blue"><a href="#">Contatta l'ufficio vendite</a></button>
-                                </div>
+                            <div class="col-12 card-left">
+                                <a class="button button--blue" href="">Contatta l'uffico vendite</a>
                             </div>
+    
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+
+        <!-- FIND PARTNER -->
+
+
+        <section class="partner">
+            <div class="container">
+                    <div class="find_partner">
+                        <div class="col-8  find_partner_image">
+                            <img src="./img/partner.png" alt="">
+                        </div>
+                        <div class="col-4 find_partner_text ">
+                            <h2 class="find_partner_title">Entra in contatto con un partner Dropbox</h2>
+                            <p class="find_partner_text">
+                                Trova un partner Dropbox e HelloSign di fiducia.
+                                Ottieni le soluzioni e i servizi necessari per 
+                                raggiungere i tuoi obiettivi aziendali, tra 
+                                cui implementazione, integraziuone, gestione
+                                e supporto continui.
+                            </p>
+                            <a class="button button--white" href="#">Trova un partner</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DROPBOX BUSINESS FEATURE -->
+
+        <section class="business_feature">
+            <div class="container">
+                <div class="business_title">
+                    <h1>Esegui più operazioni con DropBox Business</h1>
+                </div>
+
+                <div class="row business_feature">
+                    <div class="col-4">
+                        <div class="business_card">
+                            <div class="feature_img_title">
+                                <img src="./img/business-feature-switching-tools.png" alt="">
+                                <h2>Passa di meno da uno strumento all'altro</h2>
+                            </div>
+                            <p>
+                                Porta a termine le attività quotidiane con un soluzioni
+                                strumento. Crea, modifica e condividi cloud da Documenti.
+                                Fogli e presentazioni di Google, file Microsoft Office e 
+                                Dropbox Paper direttamente da Dropbox.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="business_card">
+                            <div class="feature_img_title">
+                                <img src="./img/business-feature-send-files-it.png" alt="">
+                                <h2>Passa di meno da uno strumento all'altro</h2>
+                            </div>
+                            <p>
+                                Porta a termine le attività quotidiane con un soluzioni
+                                strumento. Crea, modifica e condividi cloud da Documenti.
+                                Fogli e presentazioni di Google, file Microsoft Office e 
+                                Dropbox Paper direttamente da Dropbox.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="business_card">
+                            <div class="feature_img_title">
+                                <img src="./img/business-feature-coordinate-it.png" alt="">
+                                <h2>Passa di meno da uno strumento all'altro</h2>
+                            </div>
+                            <p>
+                                Porta a termine le attività quotidiane con un soluzioni
+                                strumento. Crea, modifica e condividi cloud da Documenti.
+                                Fogli e presentazioni di Google, file Microsoft Office e 
+                                Dropbox Paper direttamente da Dropbox.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="business_card">
+                            <div class="feature_img_title">
+                                <img src="./img/business-feature-integrations-it.png" alt="">
+                                <h2>Passa di meno da uno strumento all'altro</h2>
+                            </div>
+                            <p>
+                                Porta a termine le attività quotidiane con un soluzioni
+                                strumento. Crea, modifica e condividi cloud da Documenti.
+                                Fogli e presentazioni di Google, file Microsoft Office e 
+                                Dropbox Paper direttamente da Dropbox.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="business_card">
+                            <div class="feature_img_title">
+                                <img src="./img/business-feature-multi-device.png" alt="">
+                                <h2>Passa di meno da uno strumento all'altro</h2>
+                            </div>
+                            <p>
+                                Porta a termine le attività quotidiane con un soluzioni
+                                strumento. Crea, modifica e condividi cloud da Documenti.
+                                Fogli e presentazioni di Google, file Microsoft Office e 
+                                Dropbox Paper direttamente da Dropbox.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="business_card">
+                            <div class="feature_img_title">
+                                <img src="./img/business-feature-security.png" alt="">
+                                <h2>Passa di meno da uno strumento all'altro</h2>
+                            </div>
+                            <p>
+                                Porta a termine le attività quotidiane con un soluzioni
+                                strumento. Crea, modifica e condividi cloud da Documenti.
+                                Fogli e presentazioni di Google, file Microsoft Office e 
+                                Dropbox Paper direttamente da Dropbox.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+       
+        
     </main>
     <footer>
     </footer>
