@@ -98,6 +98,7 @@ a.button {
 
 .button--white {
     border: 1px solid black;
+    background-color: white;
 }
 
 .link {
@@ -391,7 +392,7 @@ a.button {
 
 
 
-/* CAROSELLO */
+/* CAROSELLO company */
 
 .col-4.company {
     display: flex;
@@ -414,6 +415,12 @@ a.button {
     justify-content: center;
     align-items: center;
 }
+
+
+
+/* CAROSELLO STYLE */
+
+
 
 .designit {
     background-color: #A2D39B;
@@ -456,3 +463,32 @@ a.button {
     filter: invert(1);
 }
 
+.description_separator {
+    width: 100px;
+    color: lightgray;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.description_text {
+    margin-bottom: 47px;
+}
+
+
+
+/* CAROSELLO COMPANY second section */
+
+.main_second_section {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 150px;
+}
+
+.company_second_section {
+    background-color: #B4D0E7;
+    padding-bottom: 150px
+}
+
+.company_second_section_title {
+    color: #61082B;
+}
