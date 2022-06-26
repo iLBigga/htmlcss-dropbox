@@ -9,10 +9,7 @@ ol, ul, menu{
     list-style: none;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
+
 
 img {
     max-width: 100%;
@@ -78,7 +75,7 @@ section {
 
 
 
-/* REGOLE BUTTON */
+/* REGOLE BUTTON-LINK*/
 
 
 
@@ -87,6 +84,7 @@ section {
     line-height: 44px;
     padding: 0 16px;
     text-align: center;
+    text-decoration: none;
 }
 
 a.button {
@@ -102,6 +100,10 @@ a.button {
     border: 1px solid black;
 }
 
+.link {
+    text-decoration: none;
+    color: black;
+}
 
 
 /* REGOLE HEADER */
@@ -235,9 +237,6 @@ a.button {
     margin-bottom: 34px;
 }
 
-.card-link {
-    color: #0061ff;
-}
 
 
 
@@ -381,5 +380,79 @@ a.button {
 
 
 
-/* DEBUG */
+/* DISCOVER MINI SECTION  */
+
+
+
+.discover_link_title {
+    padding-bottom: 60px;
+    margin-top: 50px;
+}
+
+
+
+/* CAROSELLO */
+
+.col-4.company {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.company_item {
+    aspect-ratio: 1 / 1;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 80px;
+}
+
+.company_internal_item {
+    display: flex;
+    width: 169px;
+    height: 128px;
+    justify-content: center;
+    align-items: center;
+}
+
+.designit {
+    background-color: #A2D39B;
+}
+
+.main_company .arizona_university {
+    background-color: #61082B;
+}
+
+.main_company .florida_university {
+    background-color: #0093CE;
+}
+
+.main_company .topps {
+    background-color: #FF1C1C;
+}
+
+.main_company .world_bicycle {
+    background-color: #D5001F;
+}
+
+.main_company .hearts_corp {
+    background-color: #B4D0E7;
+}
+
+.main_company .lonely_planet {
+    background-color: #0D2481;
+}
+
+.main_company .clear_channel {
+    background-color: #FFD830;
+}
+
+.main_company .company_description {
+    background-color: #F5F5F5;
+    padding: 47px 50px;
+}
+
+.main_company .company img{
+    filter: invert(1);
+}
 
