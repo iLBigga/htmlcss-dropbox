@@ -33,7 +33,7 @@
                     <li><a class="link" href="#">Supporto</a></li>
                     <li><a class="link" href="#">Contatta l'ufficio vendite</a></li>
                     <li><a class="link" href="#">Accedi</a></li>
-                    <li><a class="link" class="button--start" href="">Inizia</a></li>
+                    <li><a class="button--start link" href="">Inizia</a></li>
                 </ul>
             </nav>
         </nav>
@@ -112,7 +112,7 @@
                             </ul>
                             <a class="button button--blue" href="">Prova gratis per 30 giorni</a>
                             <p>oppure <a href="#">acquista ora</a></p>
-                            <hr>
+                            <hr class="plan_divisor">
                             <div class="card_bottom">
                                 <h4>Punti Salienti del piano</h4>
                                 <ul class="card_feature ">
@@ -138,7 +138,7 @@
                             </ul>
                             <a class="button button--blue" href="">Prova gratis per 30 giorni</a>
                             <p>oppure <a href="#">acquista ora</a></p>
-                            <hr>
+                            <hr class="plan_divisor">
                             <div class="card_bottom">
                                 <h4>Punti Salienti del piano</h4>
                                 <ul class="card_feature ">
@@ -167,7 +167,7 @@
                             </ul>
                             <a class="button button--blue" href="">Prova gratis per 30 giorni</a>
                             <p>oppure <a href="#">acquista ora</a></p>
-                            <hr>
+                            <hr class="plan_divisor">
                             <div class="card_bottom">
                                 <h4>Punti Salienti del piano</h4>
                                 <ul class="card_feature ">
@@ -204,27 +204,31 @@
 
         <section class="partner">
             <div class="container">
-                    <div class="find_partner">
+                    <div class="row find_partner">
                         <div class="col-8  find_partner_image">
                             <img src="./img/partner.png" alt="">
                         </div>
-                        <div class="col-4 find_partner_text ">
+                        <div class="col-4 find_partner_description ">
                             <h2 class="find_partner_title">Entra in contatto con un partner Dropbox</h2>
                             <p class="find_partner_text">
-                                Trova un partner Dropbox e HelloSign di fiducia.
+                                Trova un partner Dropbox e HelloSig n di fiducia.
                                 Ottieni le soluzioni e i servizi necessari per 
                                 raggiungere i tuoi obiettivi aziendali, tra 
                                 cui implementazione, integraziuone, gestione
                                 e supporto continui.
                             </p>
-                            <a class="button button--white" href="#">Trova un partner</a>
+                            <a class="link button button--white" href="#">Trova un partner</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+
+
         <!-- DROPBOX BUSINESS FEATURE CARD -->
+
+
 
         <section class="business_feature_card">
             <div class="container">
@@ -343,23 +347,33 @@
         <!-- CAROSELLO Company -->
 
         <section>
-            <div class="row main_company">
+            <div class="row carousel_main_company">
                 <div class="col-4 company">
-                    <div class="company_item designit">
-                        <div class="company_internal_item "><img src="./img/designit.svg" alt=""></div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="company-logo_box  designit">
+                                <figure class="logo"><img src="./img/designit.svg" alt=""></figure>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="company-logo_box  arizona_university">
+                                <figure class="logo"><img src="./img/arizona_state_university.svg" alt=""></figure>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="company-logo_box  florida_university">
+                                <figure class="logo"><img src="./img/university_of_florida.svg" alt=""></figure>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="company-logo_box topps">
+                                <figure class="logo"><img src="./img/topps.svg" alt=""></figure>
+                            </div>
+                        </div>                        
                     </div>
-                    <div class="company_item arizona_university">
-                        <div class="company_internal_item"><img src="./img/arizona_state_university.svg" alt=""></div>
-                    </div>
-                    <div class="company_item florida_university">
-                        <div class="company_internal_item"><img src="./img/university_of_florida.svg" alt=""></div>
-                    </div>
-                    <div class="company_item topps">
-                        <div class="company_internal_item"><img src="./img/topps.svg" alt=""></div>
-                    </div>
-
                 </div>
-                <div class="col-4 company_description"> 
+
+                <div class="col-4 carousel_company_description"> 
                     <div class="company_descritpion_title">
                         <img src="./img/designit.svg" alt="">
                     </div>
@@ -373,20 +387,31 @@
                     <p class="description_author">Morten Thomsen, Global IT Lead</p>
                    
                 </div>
+
                 <div class="col-4 company">
-                    <div class="company_item world_bicycle">
-                        <div class="company_internal_item"><img src="./img/world_bicycle_relief.svg" alt=""></div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="company-logo_box world_bicycle">
+                                <figure class="logo"><img src="./img/world_bicycle_relief.svg" alt=""></figure>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="company-logo_box hearts_corp">
+                                <figure class="logo"><img src="./img/hearst_corp.svg" alt=""></figure>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="company-logo_box lonely_planet">
+                                <figure class="logo"><img src="./img/lonely_planet.svg" alt=""></figure>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="company-logo_box clear_channel"">
+                                <figure class="logo"><img src="./img/clear_channel.svg" alt=""></figure>
+                            </div>
+                        </div>                        
                     </div>
-                    <div class="company_item hearts_corp">
-                        <div class="company_internal_item"><img src="./img/hearst_corp.svg" alt=""></div>
-                    </div>
-                    <div class="company_item lonely_planet">
-                        <div class="company_internal_item"><img src="./img/lonely_planet.svg" alt=""></div>
-                    </div>
-                    <div class="company_item clear_channel">
-                        <div class="company_internal_item"><img src="./img/clear_channel.svg" alt=""></div>
-                    </div>
-                </div>
+                </div>                
             </div>
         </section>
 
@@ -403,17 +428,98 @@
                     </div>
                     <div class="col-4">
                         <div class="company_second_section_button">
-                            <a class="button button--white" href="#">inizia la tua prova gratuita</a>
+                            <a class="link button button--white" href="#">inizia la tua prova gratuita</a>
                         </div>
                     </div>
                 </div>
+        </section> 
+
+
+        <!-- FAQ Section -->
+
+        <section class="faq_section">
+            <div class="container">
+                <h1 class="faq_title main_section_title">Domande frequenti</h1>
+                <ul class="faq_list">
+                    <li class="faq_question">
+                        Qual è la differenza tra Dropbox Busisess Standard e Dropbox Busisness Advance?
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <li class="faq_question">
+                        Qual è la differenza tra Dropbox Busisess Standard e Dropbox Busisness Advance?
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <li class="faq_question">
+                        Qual è la differenza tra Dropbox Busisess Standard e Dropbox Busisness Advance?
+                        <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                </ul>
+            </div>            
         </section>
-
-        <section></section>
-
-
     </main>
-    <footer>
+
+
+
+
+    <footer class="main_footer">
+        <div class="container_large">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="footer_title_list">Dropbox</h3>
+                            <ul class="footer_list">
+                                <li><a class="footer_link" href="#">Applicazione desktop</a></li>
+                                <li><a class="footer_link" href="#">Perchè Dropbox</a></li>
+                                <li><a class="footer_link" href="#">Piani</a></li>
+                                <li><a class="footer_link" href="#">Sicurezza</a></li>
+                                <li><a class="footer_link" href="#">Funzioni</a></li>
+                            </ul>
+                    </div>
+                    <div class="col">
+                        <h3 class="footer_title_list">Prodotti</h3>
+                            <ul class="footer_list">
+                                <li><a class="footer_link" href="#">Applicazione desktop</a></li>
+                                <li><a class="footer_link" href="#">Perchè Dropbox</a></li>
+                                <li><a class="footer_link" href="#">Piani</a></li>
+                                <li><a class="footer_link" href="#">Sicurezza</a></li>
+                                <li><a class="footer_link" href="#">Funzioni</a></li>
+                            </ul>
+                    </div>
+                    <div class="col">
+                        <h3 class="footer_title_list">Azienda</h3>
+                            <ul class="footer_list">
+                                <li><a class="footer_link" href="#">Applicazione desktop</a></li>
+                                <li><a class="footer_link" href="#">Perchè Dropbox</a></li>
+                                <li><a class="footer_link" href="#">Piani</a></li>
+                                <li><a class="footer_link" href="#">Sicurezza</a></li>
+                                <li><a class="footer_link" href="#">Funzioni</a></li>
+                            </ul>
+                    </div>
+                    <div class="col">
+                        <h3 class="footer_title_list">Supporto</h3>
+                            <ul class="footer_list">
+                                <li><a class="footer_link" href="#">Applicazione desktop</a></li>
+                                <li><a class="footer_link" href="#">Perchè Dropbox</a></li>
+                                <li><a class="footer_link" href="#">Piani</a></li>
+                                <li><a class="footer_link" href="#">Sicurezza</a></li>
+                                <li><a class="footer_link" href="#">Funzioni</a></li>
+                            </ul>
+                    </div>
+                    <div class="col">
+                        <h3 class="footer_title_list">Community</h3>
+                            <ul class="footer_list">
+                                <li><a class="footer_link" href="#">Applicazione desktop</a></li>
+                                <li><a class="footer_link" href="#">Perchè Dropbox</a></li>
+                                <li><a class="footer_link" href="#">Piani</a></li>
+                                <li><a class="footer_link" href="#">Sicurezza</a></li>
+                                <li><a class="footer_link" href="#">Funzioni</a></li>
+                            </ul>
+                    </div>
+                </div>
+                <hr class="footer_divisor">
+                <div class="footer_language">
+                    <i class="fa-solid fa-earth-americas"></i> Italiano <i class="fa-solid fa-caret-up"></i>
+                </div>
+        </div>
     </footer>
 
 </body>

@@ -9,8 +9,6 @@ ol, ul, menu{
     list-style: none;
 }
 
-
-
 img {
     max-width: 100%;
     display: block;
@@ -20,7 +18,10 @@ img {
     font-size: 15px;
 }
 
-
+.main_footer .footer_link {
+    text-decoration: none;
+    color: white;
+}
 
 /* REGOLE LAYOUT */
 
@@ -50,8 +51,12 @@ img {
     flex-basis: calc(100% / 3);
 }
 
+.col-6 {
+    flex-basis: calc(100% / 2);
+}
+
 .col-8 {
-    flex-basis: calc(100% *2 / 3);
+    flex-basis: calc(100% * 2 / 3);
 }
 
 
@@ -97,14 +102,15 @@ a.button {
 }
 
 .button--white {
-    border: 1px solid black;
     background-color: white;
+    border: 1px solid currentColor;
 }
 
 .link {
     text-decoration: none;
     color: black;
 }
+
 
 
 /* REGOLE HEADER */
@@ -245,19 +251,19 @@ a.button {
 
 
 
-.main_plan_title {
+.plan .main_plan_title {
     font-size: 42;
 }
 
-.card-12.title {
+.plan .card-12.title {
     margin-bottom: 20px;
 }
 
-.card-12.info {
+.plan .card-12.info {
     margin-bottom: 50px;
 }
 
-.card-12.text {
+.plan .card-12.text {
     font-size: 14px;
 }
 
@@ -324,13 +330,21 @@ a.button {
 }
 
 
+.plan_divisor {
+    width: 48px;
+    color: lightslategray;
+}
+
+
 
 /* FIND PARTNER SECTION TEXT STYLE */
 
 
+.find_partner_description {
+    padding-top: 60px;
+}
 
 .find_partner_title {
-    padding-top: 60px;
     padding-bottom: 16px;
 }
 
@@ -344,8 +358,9 @@ a.button {
 
 
 
+
 .find_partner {
-    display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     gap: 50px;
 }
@@ -394,28 +409,22 @@ a.button {
 
 /* CAROSELLO company */
 
-.col-4.company {
-    display: flex;
-    flex-wrap: wrap;
-}
 
-.company_item {
-    aspect-ratio: 1 / 1;
-    flex-grow: 1;
+
+.company-logo_box{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 80px;
 }
 
-.company_internal_item {
-    display: flex;
-    width: 169px;
-    height: 128px;
-    justify-content: center;
-    align-items: center;
+.company-logo_box {
+    aspect-ratio: 1/1;
 }
 
+.company-logo_box .logo{
+    width: 55%;
+    filter: invert(1);
+}
 
 
 /* CAROSELLO STYLE */
@@ -426,57 +435,55 @@ a.button {
     background-color: #A2D39B;
 }
 
-.main_company .arizona_university {
+.company-logo_box.arizona_university {
     background-color: #61082B;
 }
 
-.main_company .florida_university {
+.company-logo_box.florida_university {
     background-color: #0093CE;
 }
 
-.main_company .topps {
+.company-logo_box.topps {
     background-color: #FF1C1C;
 }
 
-.main_company .world_bicycle {
+.company-logo_box.world_bicycle {
     background-color: #D5001F;
 }
 
-.main_company .hearts_corp {
+.company-logo_box.hearts_corp {
     background-color: #B4D0E7;
 }
 
-.main_company .lonely_planet {
+.company-logo_box.lonely_planet {
     background-color: #0D2481;
 }
 
-.main_company .clear_channel {
+.company-logo_box.clear_channel {
     background-color: #FFD830;
 }
 
-.main_company .company_description {
+.carousel_company_description {
     background-color: #F5F5F5;
     padding: 47px 50px;
 }
 
-.main_company .company img{
-    filter: invert(1);
-}
-
-.description_separator {
+.carousel_company_description .description_separator {
     width: 100px;
     color: lightgray;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
-.description_text {
+.carousel_company_description .description_text {
     margin-bottom: 47px;
 }
 
 
 
 /* CAROSELLO COMPANY second section */
+
+
 
 .main_second_section {
     justify-content: space-between;
@@ -491,4 +498,63 @@ a.button {
 
 .company_second_section_title {
     color: #61082B;
+}       
+
+
+
+/* FAQ Section*/
+
+
+
+.faq_list {
+    margin-top: 70px;
+}
+
+.faq_question {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    padding: 40px 40px 40px 0;
+}
+
+.faq_list .faq_question:last-child {
+    border-bottom: 1px solid black;
+}       
+
+
+
+
+/* FOOTER */
+
+
+
+.main_footer {
+    margin-top: 150px;
+    background-color: black;
+    color: white;
+}
+
+.main_footer .row{
+    justify-content: space-between;
+    padding-bottom: 120px;
+    padding-top: 110px;
+}
+
+.footer_title_list {
+    margin-bottom: 40px;
+}
+
+.footer_list li {
+    padding-bottom: 20px;
+}
+
+
+.footer_language {
+    padding: 50px 0 50px;
+    color: lightgrey;
+}
+
+.footer_divisor {
+    width: 120px;
+    background-color: lightgray;
 }
