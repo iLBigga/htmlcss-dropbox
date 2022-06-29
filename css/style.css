@@ -23,6 +23,7 @@ img {
     color: white;
 }
 
+
 /* REGOLE LAYOUT */
 
 
@@ -279,7 +280,7 @@ a.button {
 
 .plan_checkbox {
     padding-top: 50px;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
     margin-bottom: 50px;
 }
@@ -427,6 +428,11 @@ a.button {
 }
 
 
+.carousel_company_description {
+    aspect-ratio: 1/1 ;
+    overflow: scroll;
+}
+
 /* CAROSELLO STYLE */
 
 
@@ -557,4 +563,9 @@ a.button {
 .footer_divisor {
     width: 120px;
     background-color: lightgray;
+}
+
+
+.carousel_company_description {
+    aspect-ratio: 1/1;
 }
